@@ -126,3 +126,9 @@ def delete_entry(task_id):
     db.session.commit()
     flash('The task was deleted.')
     return redirect(url_for('tasks'))
+
+# Errors
+def flash_errors(form):
+    for field, errors in form.errors.items():
+        for error in errors:
+            flash(u"Error in the %s field - %s" % (getattr(form, field).label.text, error), 'error')
