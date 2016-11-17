@@ -1,6 +1,7 @@
 body {
-  font-family: sans-serif;
-  background: #eee;
+  /* font-family: sans-serif; */
+  padding: 60px 0;
+  background: #ffffff;
 }
 
 a, h1, h2 {
@@ -66,7 +67,7 @@ h2 {
 .error {
   color: red;
   font-size: .8em;
-  background-color: #FFFFFF;
+  /* background-color: #FFFFFF; */
 
 }
 
@@ -127,3 +128,9 @@ h2 {
   text-decoration:none;
   position:relative;
 }
+
+.footer {
+  padding-top: 30px;
+}
+
+
