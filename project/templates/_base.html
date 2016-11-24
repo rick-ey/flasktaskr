@@ -29,7 +29,7 @@
             {% if not session.logged_in %}
               <li><a href="{{ url_for('users.register') }}">Signup</a></li>
             {% else %}
-              <li><a href+"{{ url_for('users.logout') }}">Signout</a></li>
+              <li><a href="{{ url_for('users.logout') }}">Signout</a></li>
             {% endif %}
           </ul>
           {% if session.logged_in %}
