@@ -3,3 +3,11 @@
 404 error at 24-11-2016 10:23:39: http://localhost:5000/does_not_exist 
 500 error at 24-11-2016 10:25:59: http://localhost:5000/ 
 404 error at 24-11-2016 13:13:31: http://localhost/this-route-does-not-exist/ 
+500 error at 25-11-2016 12:07:16: http://localhost:5000/api/v1/tasks/1 
+500 error at 25-11-2016 12:31:10: http://localhost:5000/api/v1/tasks/1 
+500 error at 25-11-2016 12:31:28: http://localhost:5000/api/v1/tasks/1 
+500 error at 25-11-2016 12:52:39: http://localhost:5000/api/v1/tasks/1 
+500 error at 25-11-2016 13:11:31: http://localhost:5000/api/v1/tasks/2 
+500 error at 25-11-2016 13:15:40: http://localhost:5000/api/v1/tasks/4 
+404 error at 25-11-2016 20:07:10: http://localhost/this-route-does-not-exist/ 
+404 error at 25-11-2016 20:09:59: http://localhost/this-route-does-not-exist/ 
