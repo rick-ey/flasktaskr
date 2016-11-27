@@ -1,17 +1,17 @@
-# specify language
 language:
- - python
-
-# specify python version(s)
+- python
 python:
- - "3.5"
- - "3.4"
- - "2.7"
-
-# install dependencies
+- '3.5'
+- '3.4'
+- '2.7'
 install:
- - pip install -r requirements.txt
-
-# run tests
+- pip install -r requirements.txt
 script:
- - nosetests
+- nosetests
+deploy:
+  provider: heroku
+  api_key:
+    secure: begVKaPx+0C/VowvkjEY7HzFLNjxSuzA4Cr0OFMuNtBUc5YH7ZdiLb3OBu08+Y3KiPCk5LwZtJRf/dh3gK+snI+RLYFTk88OF/om7dEQNNlwwuuRlqAREZa6dHLP917qOCCvO8JVKWhyNpxaRt5d+z/Mz2cW1NiKIAgkLNfMfBnfnC2dZwaOIpOGWOK6ILoJOOcX9BkWZ6oXiGMgI18rW9Nw4GgoBYAt5E7KlqzjlgF0BvfwogtDTzFuev+Om3uEq73kPyBbEgFzFd5Lh/3YodRDU/ZwrAxkgkh9GHW4A8lI+5JC90hl3zfywEif9PnnanOqU1SbUVuc6JVdzoGlpWQT8xjwhsDfxyft21QYt4b7OiIhZmnQeufwzC1P9wiqLcwt6xANVOfqsUqW2UUxKKZ/LWUshjBbPqjCAH/zfkOngQQkToXX1dy3ux6Z921vWH92qBPADRg0Ybo7n8O9Gxt5XTjJS3LnaUC1QgOQsfE4tqnL8H1ue4LjMmJBCSx+0P89uS8iDzTFxmBvWiOjNHCTwWdJrFrjqG8k81MTSgfCKiEpkZGY27n2TeYxAk5tnnb7JsX2xgA6RojhFKsBtMYMYa+HHtlxp4qDh90vp4q6sCaY4KhLxho9JxwKnxf/BEQM/TYhTuGSvXHl1YqAW0KR/z2EovmlG7QK2y08FHI=
+  app: fierce-oasis-13492
+  on:
+    repo: rickey79/flasktaskr
